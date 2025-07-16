@@ -1,19 +1,18 @@
 {
+  "globalHeaders": {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    "Cross-Origin-Embedder-Policy": "credentialless",
+    "Cross-Origin-Opener-Policy": "same-origin"
+  },
   "routes": [
     {
-      "route": "/",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/viewer",
-      "serve": "/web/viewer.html",
-      "statusCode": 200
+      "route": "/*",
+      "headers": {
+        "Cross-Origin-Embedder-Policy": "credentialless",
+        "Cross-Origin-Opener-Policy": "same-origin"
+      }
     }
-  ],
-  "mimeTypes": {
-    ".pdf": "application/pdf",
-    ".js": "application/javascript",
-    ".mjs": "application/javascript"
-  }
+  ]
 }
