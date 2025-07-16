@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/viewer",
+      "serve": "/web/viewer.html",
+      "statusCode": 200
+    }
+  ],
+  "mimeTypes": {
+    ".pdf": "application/pdf",
+    ".js": "application/javascript",
+    ".mjs": "application/javascript"
+  }
+}
