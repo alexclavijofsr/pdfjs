@@ -1,15 +1,3 @@
 {
-  "globalHeaders": {
-    "Cross-Origin-Embedder-Policy": "credentialless",
-    "Cross-Origin-Opener-Policy": "same-origin"
-  },
-  "routes": [
-    {
-      "route": "/*",
-      "headers": {
-        "X-Frame-Options": "SAMEORIGIN",
-        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; object-src 'none'; media-src 'self' blob:; frame-src 'self';"
-      }
-    }
-  ]
+  
 }

@@ -17060,7 +17060,7 @@ function webViewerLoad() {
   try {
     parent.document.dispatchEvent(event);
   } catch (ex) {
-    console.error("webviewerloaded:", ex);
+    console.warn("webviewerloaded:", ex);
     document.dispatchEvent(event);
   }
   PDFViewerApplication.run(config);
